@@ -78,7 +78,7 @@
       //var api = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + "&units=" + units + '&appid=e2db5b0453a25a492e87ad8b03046a7c';
 
       //weather API without units variable that returns temp in Kelvin
-      var api = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&appid=e2db5b0453a25a492e87ad8b03046a7c';
+      var api = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&appid=e2db5b0453a25a492e87ad8b03046a7c';
 
       $.getJSON(api, function (data) {
         var Fahrenheit = getTemp(data.main.temp);
