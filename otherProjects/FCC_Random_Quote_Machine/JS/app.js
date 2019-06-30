@@ -5,8 +5,9 @@
   var author = "";
   $(document).ready(function () {
     $("#getNewQuote").on("click", function () {
-      //$.getJSON("/json/quotes.json", function (json) {
-      $.getJSON("https://raw.githubusercontent.com/happycodecamper/Random_Quotes/da76ab8e3b9c8f0278cd8e9b05a900ed8418ebe9/quotes.json", function (json) {
+      // $.getJSON("/json/quotes.json", function (json) {
+      $.getJSON("https://raw.githubusercontent.com/happycodecamper/happycodecamper.github.io/master/otherProjects/FCC_Random_Quote_Machine/json/quotes.json", function (json) {
+      // $.getJSON("https://raw.githubusercontent.com/happycodecamper/Random_Quotes/da76ab8e3b9c8f0278cd8e9b05a900ed8418ebe9/quotes.json", function (json) {
         var html = "";
         var randomQuote = json[Math.floor(Math.random() * json.length)];
         quote = randomQuote.quote;
